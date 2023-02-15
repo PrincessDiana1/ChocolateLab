@@ -1,4 +1,4 @@
-packag com.bnta.chocolate.services;
+package com.bnta.chocolate.services;
 
 import com.bnta.chocolate.models.Chocolate;
 import com.bnta.chocolate.repositories.ChocolateRepository;
@@ -12,7 +12,7 @@ public class ChocolateServices {
     @Autowired
     ChocolateRepository chocolateRepository;
 
-    public List<Chocolate> getAllChoclate() {return chocolateRepository.findAll();}
-
-
+    public List<Chocolate> getAllChocolate() {
+        return chocolateRepository.findAll();
+    }
 }
